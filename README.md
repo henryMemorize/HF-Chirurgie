@@ -1,44 +1,6 @@
-## A Standard LaTeX Paper Template ##
+## Aufgabenstellung ##
 
-Every time I set up a new `LaTeX` project, I need to copy over my usual `Makefile`, set up a git repo, create an empty document, and relearn `BibTeX`. That's tedious.
 
-Cloning this repo is much easier.
+Die Präsentationen beginnen ab Dienstag, dem 29.11.2018. Die Vorträge haben einen zeitlichen Umfang von 15 Minuten. Fertigen Sie für Ihr Thema eine Ausarbeitung von 5 – 6 Seiten an, sowie eine Zusammenfassung von einer Seiten, die Sie bis zum 27. November in elektronischer Form (PDF) per Email an (m.vetter@hs-mannheim.de, Betreff: BM Referat) abgeben.
 
-### Prerequisites ###
-
-I've used this setup successfully on Macs, FreeBSD, and a few Linuxes. It might work on Cygwin, but I haven't tested it.
-
-You'll need:
-
-- `LaTeX`
-- `make`
-- `git`
-
-### Installation ###
-
-`git clone https://github.com/hrs/latex-paper-template.git YOUR_PROJECT_NAME`
-
-I've creatively named the default project `paper`. If you want to change that, rename the `paper.tex` and `paper.bib` files, fix the bibliography reference in `paper.tex`, and change the value of the `project` variable in the `Makefile`.
-
-### Usage ###
-
-`make`
-: Build the project, generating a `pdf`.
-
-`make clean`
-: Deletes files created by `LaTeX` (`aux`, `dvi`, `pdf`, etc.)
-
-`make fresh`
-: Delete intermediate files and rebuild. Equivalent to `make clean && make`
-
-### IEEEtran ###
-
-I often need the IEEE document class. If you're not working somewhere on the EECS spectrum, you probably don't, and you may as well remove `IEEEtran.cls` immediately and adjust your document class to use `article` or something. Ain't no thang.
-
-However, if you're interesting in learning to use the IEEEtran class, you'll probably spend some time consulting the [HOWTO [pdf]](http://texdoc.net/texmf-dist/doc/latex/IEEEtran/IEEEtran_HOWTO.pdf).
-
-### "This is stupid, why don't you just..." ###
-
-Nah, I like my setup. Shush.
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/hrs/latex-paper-template/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+Die Einstiegsliteratur zu den Präsentationsthemen stammt aus dem Buch“ Medizintechnik“ von Kramme, 4. Auflage, Springer. Die elektronische Version der Themen können Sie vom der Bibliothek herunterladen (http://link.springer.com/book/10.1007/978-3-642-16187-2). Suchen Sie für Ihr Thema geeignete weiterführende Literatur bzw. Papers, die Sie in Ihrer Präsentation verwenden und zitieren. Benutzen Sie für Ihre Suche die Suchmaschinen PubMed (http://www.ncbi.nlm.nih.gov/pubmed) sowie IEEE Explorer (http://ieeexplore.ieee.org). Die Bewertung der Ausarbeitung und Präsentation ist Teil Ihrer Modul-Prüfungsleistung.
