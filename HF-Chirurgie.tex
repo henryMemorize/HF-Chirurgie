@@ -2,6 +2,7 @@
 % Don't modify this section unless you know what you're doing!
 \documentclass[letterpaper,12pt]{article}
 \usepackage[ngerman,english]{babel}
+\usepackage{siunitx} 
 \usepackage{tabularx} % extra features for tabular environment
 \usepackage{amsmath}  % improve math presentation
 \usepackage{graphicx} % takes care of graphic including machinery
@@ -21,46 +22,47 @@
 \begin{document}
 	
 	\selectlanguage{ngerman}
-	\title{HF-Chirurgie}
+	\title{Hochfrequenzchirurgie}
 	\author{Heinrich Merk}
 	\date{\today}
 	\maketitle
 	
 	\selectlanguage{english}
 	\begin{abstract}
-		In this experiment we studied a very important physical effect by measuring the
-		dependence of a quantity $V$ of the quantity $X$ for two different sample
-		temperatures.  Our experimental measurements confirmed the quadratic dependence
-		$V = kX^2$ predicted by Someone's first law. The value of the mystery parameter
-		$k = 15.4\pm 0.5$~s was extracted from the fit. This value is
-		not consistent with the theoretically predicted $k_{theory}=17.34$~s. We attribute this
-		discrepancy to low efficiency of our $V$-detector.
+		In dieser Ausarbeitung geht es um die Hochfrequenzchirurgie und derer grundlegenden physikalischen Prozesse. Es werden die verschiedenen Auswirkungen auf das Gewebe, die Apparatur sowie das grundlegende Verständis zur dahinter liegenden Technik beleuchtet. Zum Schluss werden neu erworbene Techniken aufgegriffen und Aussichtsmöglichkeiten vorgestellt.
 		
 	\end{abstract}
 	
 	\selectlanguage{ngerman}
 	\section{Einleitung}
 	
-	The very important physical effect has applications to astronomy, nuclear physics, condensed matter, and more. 
+		Unter der Hochfrequenzchirurgie versteht man den assistierenden Einsatz von elektrischer Energie in der Chirurgie zur thermisch induzierten Veränderung oder Zerstörung von Gewebezellen mit dem Ziel der Hämostase (Blutstillung), Gewebedurchtrennung oder -versiegelung \cite{kramme2016medizintechnik}. Durch die kompakte Größe der Geräte, die einfache Handhabung und der Preiswertigkeit hat sich die HF-Chirurgie zu einem unentbehrlichen Handwerkszeug im operativen Alltagsbereich entwickelt und ist kaum noch wegzudenken.
 	
-	\section{Stand der Dinge}
+	\section{Stand der Technik}
 	
-	Derzeit
+		Die HF-Chirurgie lässt sich grundsätzlich auf drei wichtige Bauteile, dem Hochfrequenzgenerator, dem Applikator und der Erdung beschränken. Hierbei sorgt der HF-Generator für den benötigten Wechselstrom in einer wohl definierten Frequenz. Diese sind in der Lage eine Frequenz von $f>\SI{300}{\kilo\hertz}$ zu betreiben. Applikatoren als Handwerkszeug und Stromspitze können je nach Anwendung in verschiedenen Bauformen auftreten. Hier kann ein isoliertes Handstück diverse Applikatorspitzen für den jeweiligen Einsatz aufnehmen. Die Erdung erfolgt mithilfe einer großflächigen Elektrode oder aber der Patientenstuhl ist als Erdung direkt konfiguriert. 
+		
 	
+	\newpage
+	\section{Grundlagen}
 	
-	\section{Theorie}
+		\subsection{Elektrische Wechselwirkung mit dem Gewebe}
 	
-	Here give a brief summary of the physical effect of interest and provide
-	necessary equations. Here is how you insert an equation. According to
-	references~\cite{melissinos, Cyr, Wiki} the dependence of interest is given
-	by
-	\begin{equation} \label{eq:aperp} % the label is used to reference the equation
-		u(\lambda,T)=\frac{8\pi hc\lambda^{-5}}{e^{hc/\lambda kT}-1},
-	\end{equation}
-	where T is temperature in Kelvin, c is the speed of light, etc. Don't forget to
-	explain what each variable means the first time that you introduce it.
-	
-	
+			Fließt ein elektrischer Strom durch biologisches Gewebe, treten je nach Stromart, Stromstärke und Frequenz drei unterschiedliche Effekte auf:
+			\paragraph{Gleichstrom ($f=\SI{0}{\hertz}$)}
+			Gleichstrom hat für das Gewebe eine elektrolytische Wirkung. Es folgt eine Ionenverschiebung und elektrochemische Prozesse treten in Kraft. 
+			\paragraph{Wechselstrom ($f=\SI{20}{\hertz}-\SI{20}{\kilo\hertz}$)}
+			Bei diesen Frequenzen treten faradische Effekte auf. Diese sorgen für eine Störung der Nerven- und Muskelreizung. Gefährlich sind solche Frequenzen insbesondere für das Herz, da diese es kontrahieren lassen und Herzrythmusstörungen zur Folge haben.
+			\paragraph{Wechselstrom ($f>\SI{300}{\kilo\hertz}$)}
+			Derartige Frequenzen lassen thermische Effekte zu. Die elektrische Energie kann effektiv übertragen werden, da hohe Frequenzen für eine hohe Leitfähigkeit im Gewebe sorgen, das vor allem einen kapazitiven Widerstand hat.\\\\	
+			Die Erwärmung des Gewebes ist abhängig von der Stromdichte, welche wie folgt definiert ist:
+			\begin{equation} \label{eq:stromdichte}
+				S=\frac{I}{A}
+			\end{equation}
+			Die Einwirkfläche $A$ wird von der Geometrie der Applikatoren, welche letztendlich mit der Haut in Kontakt kommen, bestimmt. Eine spitze Form sorgt für eine kleine Fläche und folglich einer hohen Stromdichte, respektive eine beispielsweise kugelförmige Geometrie.  
+		\subsection{Thermische Prozesse im Gewebe}
+		
+		
 	\section{Anwendung}
 	
 	Give a schematic of the experimental setup(s) used in the experiment (see
@@ -162,29 +164,8 @@
 
 
 
-
-
-
-
-
-
-
-	
-	\begin{thebibliography}{99}
-		
-		\bibitem{melissinos}
-		A.~C. Melissinos and J. Napolitano, \textit{Experiments in Modern Physics},
-		(Academic Press, New York, 2003).
-		
-		\bibitem{Cyr}
-		N.\ Cyr, M.\ T$\hat{e}$tu, and M.\ Breton,
-		% "All-optical microwave frequency standard: a proposal,"
-		IEEE Trans.\ Instrum.\ Meas.\ \textbf{42}, 640 (1993).
-		
-		\bibitem{Wiki} \emph{Expected value},  available at
-		\texttt{http://en.wikipedia.org/wiki/Expected\_value}.
-		
-	\end{thebibliography}
+	\bibliographystyle{unsrt}
+	\bibliography{Literatur}
 	
 	
 \end{document}
