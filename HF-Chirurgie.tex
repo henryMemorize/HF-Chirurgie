@@ -1,5 +1,4 @@
 %++++++++++++++++++++++++++++++++++++++++
-% Don't modify this section unless you know what you're doing!
 \documentclass[letterpaper,12pt]{article}
 \usepackage[ngerman,english]{babel}
 \usepackage{siunitx} 
@@ -9,12 +8,12 @@
 \usepackage[margin=1in,letterpaper]{geometry} % decreases margins
 \usepackage{cite} % takes care of citations
 \usepackage[final]{hyperref} % adds hyper links inside the generated pdf file
+\usepackage{xcolor}
 \hypersetup{
-	colorlinks=true,       % false: boxed links; true: colored links
-	linkcolor=blue,        % color of internal links
-	citecolor=blue,        % color of links to bibliography
-	filecolor=magenta,     % color of file links
-	urlcolor=blue         
+	colorlinks,
+	linkcolor={red!50!black},
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black}
 }
 %++++++++++++++++++++++++++++++++++++++++
 
@@ -73,84 +72,67 @@
 			\end{equation}
 			Die Einwirkfläche $A$ wird von der Geometrie der Applikatoren, welche letztendlich mit der Haut in Kontakt kommen, bestimmt. Eine spitze Form sorgt für eine kleine Fläche und folglich einer hohen Stromdichte $S$. Anwendungsgebiet ist das Schneiden von Gewebe. Eine beispielsweise kugelförmige Geometrie sorgt hingegen für eine geringere Stromdichte. Dadurch kann eine Koagulation des Gewebes erfolgen.\\Der Strom $I$ hängt ab vom spezifischen Widerstand des Gewebes und der verwendeten Effektivspannung
 			\begin{equation} \label{eq:effektivspannung}
-			U_{effektiv}=R_{Gewebe}*I.
+			U_{effektiv}=R_{Gewebe} \cdot I.
 			\end{equation}
 			Auch die Einwirkzeit hat einen Einfluss auf die Erwärmung des Gewebes. Je länger der Wärmefluss ins Gewebe andauert, desto höher ist der Temperaturanstieg. Mit steigender Temperatur ändert sich wiederum der Gewebezustand.
 		
 		
 	\section{Anwendung}
 	
+		Die verschiedenartigen Anwendungsformen können prinzipiell in bipolare und monopolare Verfahren eingeteilt werden. Die monopolare Anwendungstechnik kommt dabei am häufigsten zum Einsatz \cite{kramme2016medizintechnik}.
+		
 		\subsection{Bipolare Technik}
 		
-		\subsection{Monopolare Technik}
-	
-	
-	\section{Vor- und Nachteile}
-	
-	In this section you will need to show your experimental results. Use tables and
-	graphs when it is possible. Table~\ref{tbl:bins} is an example.
-	
-	\begin{table}[ht]
-		\begin{center}
-			\caption{Every table needs a caption.}
-			\label{tbl:bins} % spaces are big no-no withing labels
-			\begin{tabular}{|cc|} 
-				\hline
-				\multicolumn{1}{|c}{$x$ (m)} & \multicolumn{1}{c|}{$V$ (V)} \\
-				\hline
-				0.0044151 &   0.0030871 \\
-				0.0021633 &   0.0021343 \\
-				0.0003600 &   0.0018642 \\
-				0.0023831 &   0.0013287 \\
-				\hline
-			\end{tabular}
-		\end{center}
-	\end{table}
-	
-	Analysis of equation~\ref{eq:aperp} shows ...
-	
-	Note: this section can be integrated with the previous one as long as you
-	address the issue. Here explain how you determine uncertainties for different
-	measured values. Suppose that in the experiment you make a series of
-	measurements of a resistance of the wire $R$ for different applied voltages
-	$V$, then you calculate the temperature from the resistance using a known
-	equation and make a plot  temperature vs. voltage squared. Again suppose that
-	this dependence is expected to be linear~\cite{Cyr}, and the proportionality coefficient
-	is extracted from the graph. Then what you need to explain is that for the
-	resistance and the voltage the uncertainties are instrumental (since each
-	measurements in done only once), and they are $\dots$. Then give an equation
-	for calculating the uncertainty of the temperature from the resistance
-	uncertainty. Finally explain how the uncertainty of the slop of the graph was
-	found (computer fitting, graphical method, \emph{etc}.)
-	
-	If in the process of data analysis you found any noticeable systematic
-	error(s), you have to explain them in this section of the report.
-	
-	It is also recommended to plot the data graphically to efficiently illustrate
-	any points of discussion. For example, it is easy to conclude that the
-	experiment and theory match each other rather well if you look at
-	Fig.~\ref{fig:samplesetup} and Fig.~\ref{fig:exp_plots}.
-	
-	\begin{figure}[ht] 
-		\centering
-		\includegraphics[width=0.5\columnwidth]{Images/hsMannheim.jpg}
+			Für die Erzeugung eines elektrischen Stroms benötigt man grundsätzlich zwei Elektroden mit je einem +Pol und -Pol. Bei der bipolaren Technik besitzt der Applikator zwei Spitzen, ähnlich einer Pinzette, zwischen denen die Spannung anliegt. Das zu bearbeitende Gewebe wird zwischen den Pinzettenspitzen genommen und stellt so einen Stromfluss durch das Gewebe her. Abbildung \ref{fig:bipolareTechnik2} veranschaulicht das Prinzip.
+			\begin{figure}[ht] 
+				\centering
+				\includegraphics[width=0.5\columnwidth]{images/_bipolareTechnik.png}
+				\caption{		 
+					Bipolarer Stromkreis: Der Stromfluss bleibt auf das zwischen den beiden Pinzettenspitzen gefasste Gewebe begrenzt \cite{wiki:HF}.}
+				\label{fig:bipolareTechnik2}
+			\end{figure}
 		
-		% some figures do not need to be too wide
-		\caption{
-			\label{fig:exp_plots}  
-			Every plot must have axes labeled.
-		}
-	\end{figure}
-	
+		\subsection{Monopolare Technik}
+		
+			Bei der monopolaren Technik fließt der Strom zwischen Applikatorelektrode und einer großflächigen Gegenelektrode, wobei die Stromdichte an der Applikatorelektrode sehr hoch ist, sodass thermische Effekte auftreten.
+			Außerhalb des Wechselwirkungvolumens fächern sich die E-Feldlinien derart auf, dass die Stromdichte unkritisch ist. Dieser Sachverhalt wird in Abbildung \ref{fig:monopolareTechnik2} deutlich. Wichtig ist hierbei die gewissenhafte Aufbringung der Gegenelektrode. Es darf des weiteren keine Berührung durch dritte Personen während der Behandlung auftreten.
+			\begin{figure}[ht] 
+				\centering
+				\includegraphics[width=0.5\columnwidth]{images/_monopolareTechnik.png}
+				\caption{		 
+					Monopolarer Stromkreis mit am Oberschenkel des Patienten angelegter, großflächiger Neutralelektrode \cite{wiki:HF}.}
+				\label{fig:monopolareTechnik2}
+			\end{figure}\\
+			Zu erwähnen sei auch noch die monoterminale Technik, bei der sich nach Abbildung \ref{fig:monoterminaleTechnik} der Stromkreis über die Kapazität des Patientenkörpers zu dessen geerdeter Unterlage schließt. Dies ermöglicht ein Operieren ohne vorheriges Aufbringen der Gegenelektrode. Jedoch ist diese Technik nur für den Bereich kleiner Ströme geeignet und kommt daher für kleinere Eingriffe wie in der Zahnheilkunde oder Dermatologie in Frage. 
+			\begin{figure}[ht] 
+				\centering
+				\includegraphics[width=0.5\columnwidth]{images/monoterminaleTechnik.png}
+				\caption{		 
+					Monopolarer Stromkreis mit am Oberschenkel des Patienten angelegter, großflächiger Neutralelektrode \cite{kramme2016medizintechnik}.}
+				\label{fig:monoterminaleTechnik}
+			\end{figure}
+			
+	\section{Weitere Anwendungen}
+			
+			Eine weitere Anwendung in der HF-Chirurgie ist das \emph{Argonassistierte Schneiden}. Hierbei wird während der Anwendung ein Schutzgas (Argon) benutzt um den Luftsauerstoff aus dem Wechselwirkungsvolumen zu verdrängen und eine Schutzatmosphäre zu bilden. Aus dem Applikatorschaft ragt dann eine aktive Schneideelektrode, die beim Schneidevorgang von Argongas koaxial umströmt wird. Dies hat eine Reduzierung der Karbonisierung zu Folge. Anwendungsgebiete sind die Dermatologie und allgemeine Weichteilchirurgie.
+					
+			Die HF-Chirurgie ist für Hartgewebe wie Knochen oder Knorpel nicht geeignet, da die Leitfähigkeit aufgrund fehlendem Gewebewasser zu gering ist. Nach Gleichung \ref{eq:effektivspannung} wäre $R_{Gewebe}$ zu groß, sodass sich kein vernünftiger Strom $I$ einstellen lässt. Für eine schonende Hartgewebebearbeitung hat sich in den letzten Jahren die sogenannte \emph{Piezo-Chirurgie} entwickelt. Piezokristalle ändern bei einer angelegten Spannung ihre Länge (vergl. Ultraschall). Bei hohen Frequenzen von  $f\approx\SI{30}{\kilo\hertz}$ können so kleine Längenänderungen, gezeigt in Abbildung \ref{fig:piezoChirurgie} im Mikrometerbereich erzielt werden. Vorteile sind die effektive und präzise Bearbeitung von Hartgewebe bei gleichzeitiger Schonung des Weichgewebes, da das Weichgewebe der kleinen Oszillation mit kleiner Amplitude folgen kann und somit nicht beschädigt wird. Anwendung findet die Technik in der Mund-Gesichtschirurgie, z.B. die Präparation des Kieferknochens bei Schonung des darin befindlichen Nervus facialis (Gesichtsnerv) und der Gefäße. Durch die Preiswertigkeit, der Vielseitigkeit (durch verschiedene Applikatoren serh spezifisch anwendbar) und der Handhabung (ähnlich eines Bohrers oder Fräsers) genießt die Piezo-Chirurgie bei Ärzten hohe Akzeptanz.
+			\begin{figure}[ht] 
+				\centering
+				\includegraphics[width=0.3\columnwidth]{images/piezoChirurgie.png}
+				\caption{		 
+					Piezo-Chirurgie: Applikator erfährt durch Wechselspannung eine Längenänderung \cite{piezoChirurgie}.}
+				\label{fig:piezoChirurgie}
+			\end{figure}
 	
 	\section{Ausblick}
-	In Zukunft wird sich zeigen, ob...
+	 
+		Es hat sich gezeigt...
 	
 
 
 
 	\bibliographystyle{unsrt}
 	\bibliography{Literatur}
-	
-	
+		
 \end{document}
