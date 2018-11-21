@@ -64,8 +64,8 @@
 			Gleichstrom hat für das Gewebe eine elektrolytische Wirkung. Es folgt eine Ionenverschiebung und elektrochemische Prozesse treten in Kraft. 
 			\paragraph{Wechselstrom ($f=\SI{20}{\hertz}-\SI{20}{\kilo\hertz}$)}
 			Bei diesen Frequenzen treten faradische Effekte auf. Diese sorgen für eine Störung der Nerven- und Muskelreizung. Gefährlich sind solche Frequenzen insbesondere für das Herz, da diese es kontrahieren lassen und Herzrythmusstörungen zur Folge haben.
-			\paragraph{Wechselstrom ($f>\SI{300}{\kilo\hertz}$)}
-			Derartige Frequenzen lassen thermische Effekte zu. Die elektrische Energie kann effektiv übertragen werden, da hohe Frequenzen für eine hohe Leitfähigkeit im Gewebe sorgen, das vor allem einen kapazitiven Widerstand hat.\\\\	
+			\paragraph{Wechselstrom ($f=\SI{300}{\kilo\hertz}-\SI{4}{\mega\hertz}$)}
+			Derartige Frequenzen lassen thermische Effekte zu. Die elektrische Energie kann effektiv übertragen werden, da hohe Frequenzen für eine hohe Leitfähigkeit im Gewebe sorgen, das vor allem einen kapazitiven Widerstand hat. Die obere Grenze des Frequenzbereichs ist durch die kapazitiven Ableitströme der Elektroden und Kabel bestimmt. Mit steigender Frequenz wird auch verstärkt und unerwünscht Energie abgestrahlt und die Beherrschung der Wirkung wird problematischer. Die Gefahr, den Patienten durch Verbrennungen an anderer Stelle zu verletzen, würde steigen.\\\\	
 			Die Erwärmung des Gewebes ist abhängig von der Stromdichte, welche wie folgt definiert ist:
 			\begin{equation} \label{eq:stromdichte}
 				S=\frac{I}{A}
@@ -76,6 +76,27 @@
 			\end{equation}
 			Auch die Einwirkzeit hat einen Einfluss auf die Erwärmung des Gewebes. Je länger der Wärmefluss ins Gewebe andauert, desto höher ist der Temperaturanstieg. Mit steigender Temperatur ändert sich wiederum der Gewebezustand.
 		
+		\subsection{Schneiden und Koagulation}
+		
+			Die zwei grundlegenden Gewebeeffekte der HF-Chirurgie, das Schneiden und Koagulieren, beinhalten das Erhitzen des leitfähigen Gewebes durch einen hochfrequenten elektrischen Strom, der im Falle des Schneidens zu einer Verdampfung und Ionisierung des Wassergehalts in Geweben führt, was mit einer Sinuswelle erreicht wird (siehe Abbildung \ref{fig:schneidenStrom}), die zu extremen Spitzen des Temperaturanstiegs führt. 
+			
+			Die Koagulation des Gewebes geht aus der thermischen Denaturierung ohne Gewebeverdampfung hervor. Dies wird durch eine Reihe diskontinuierlicher Wellenpakete erreicht, bei denen Ruhephasen die sinusförmigen Wellenzyklen unterbrechen und die Gewebebildung ein wenig abkühlen lassen (siehe Abbildung \ref{fig:koagulationStrom}).
+\begin{figure}[ht]
+	\centering
+	\begin{minipage}[t]{0.45\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{images/schneidenStrom.png}
+		\caption{Schneidestrom: eine reine Sinuswelle \cite{davidson}.}
+		\label{fig:schneidenStrom}
+	\end{minipage}% <- sonst wird hier ein Leerzeichen eingefügt
+	\hfill
+	\begin{minipage}[t]{0.45\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{images/koagulationStrom.png}
+		\caption{Koagulationsstrom: intermittierende Stöße von Hochspannungsstrom \cite{davidson}.}
+		\label{fig:koagulationStrom}
+	\end{minipage}
+\end{figure}
 		
 	\section{Anwendung}
 	
@@ -86,35 +107,37 @@
 			Für die Erzeugung eines elektrischen Stroms benötigt man grundsätzlich zwei Elektroden mit je einem +Pol und -Pol. Bei der bipolaren Technik besitzt der Applikator zwei Spitzen, ähnlich einer Pinzette, zwischen denen die Spannung anliegt. Das zu bearbeitende Gewebe wird zwischen den Pinzettenspitzen genommen und stellt so einen Stromfluss durch das Gewebe her. Abbildung \ref{fig:bipolareTechnik2} veranschaulicht das Prinzip.
 			\begin{figure}[ht] 
 				\centering
-				\includegraphics[width=0.5\columnwidth]{images/_bipolareTechnik.png}
+				\includegraphics[width=0.35\columnwidth]{images/_bipolareTechnik.png}
 				\caption{		 
 					Bipolarer Stromkreis: Der Stromfluss bleibt auf das zwischen den beiden Pinzettenspitzen gefasste Gewebe begrenzt \cite{wiki:HF}.}
 				\label{fig:bipolareTechnik2}
-			\end{figure}
+			\end{figure}\\
+			Bipolare Instrumente gewinnen immer mehr an Bedeutung, da der Stromweg zwischen den Elektrodenspitzen kalkulierbar ist und nicht weite Strecken durch den Körper des Patienten durchläuft. Damit reduziert sich die Beeinflussung von beispielsweise Herzschrittmachern oder sonstigen Geräten, die während der Operation an dem Patienten angeschlossen sind.
 		
 		\subsection{Monopolare Technik}
 		
 			Bei der monopolaren Technik fließt der Strom zwischen Applikatorelektrode und einer großflächigen Gegenelektrode, wobei die Stromdichte an der Applikatorelektrode sehr hoch ist, sodass thermische Effekte auftreten.
-			Außerhalb des Wechselwirkungvolumens fächern sich die E-Feldlinien derart auf, dass die Stromdichte unkritisch ist. Dieser Sachverhalt wird in Abbildung \ref{fig:monopolareTechnik2} deutlich. Wichtig ist hierbei die gewissenhafte Aufbringung der Gegenelektrode. Es darf des weiteren keine Berührung durch dritte Personen während der Behandlung auftreten.
-			\begin{figure}[ht] 
+			Die Stromdichte nimmt hin zur Aktiven Elektrode quadratisch zu, das bedeutet außerhalb des Wechselwirkungvolumens fächern sich die E-Feldlinien derart auf, dass die Stromdichte unkritisch ist. Dieser Sachverhalt wird in Abbildung \ref{fig:monopolareTechnik2} deutlich. Wichtig ist hierbei die gewissenhafte Aufbringung der Gegenelektrode. Es darf des weiteren keine Berührung durch dritte Personen während der Behandlung auftreten.
+			\begin{figure}[h!] 
 				\centering
-				\includegraphics[width=0.5\columnwidth]{images/_monopolareTechnik.png}
+				\includegraphics[width=0.35\columnwidth]{images/_monopolareTechnik.png}
 				\caption{		 
 					Monopolarer Stromkreis mit am Oberschenkel des Patienten angelegter, großflächiger Neutralelektrode \cite{wiki:HF}.}
 				\label{fig:monopolareTechnik2}
 			\end{figure}\\
 			Zu erwähnen sei auch noch die monoterminale Technik, bei der sich nach Abbildung \ref{fig:monoterminaleTechnik} der Stromkreis über die Kapazität des Patientenkörpers zu dessen geerdeter Unterlage schließt. Dies ermöglicht ein Operieren ohne vorheriges Aufbringen der Gegenelektrode. Jedoch ist diese Technik nur für den Bereich kleiner Ströme geeignet und kommt daher für kleinere Eingriffe wie in der Zahnheilkunde oder Dermatologie in Frage. 
-			\begin{figure}[ht] 
+			\begin{figure}[h!] 
 				\centering
-				\includegraphics[width=0.5\columnwidth]{images/monoterminaleTechnik.png}
+				\includegraphics[width=0.35\columnwidth]{images/monoterminaleTechnik.png}
 				\caption{		 
 					Monopolarer Stromkreis mit am Oberschenkel des Patienten angelegter, großflächiger Neutralelektrode \cite{kramme2016medizintechnik}.}
 				\label{fig:monoterminaleTechnik}
-			\end{figure}
+			\end{figure}\\
+
 			
 	\section{Weitere Anwendungen}
 			
-			Eine weitere Anwendung in der HF-Chirurgie ist das \emph{Argonassistierte Schneiden}. Hierbei wird während der Anwendung ein Schutzgas (Argon) benutzt um den Luftsauerstoff aus dem Wechselwirkungsvolumen zu verdrängen und eine Schutzatmosphäre zu bilden. Aus dem Applikatorschaft ragt dann eine aktive Schneideelektrode, die beim Schneidevorgang von Argongas koaxial umströmt wird. Dies hat eine Reduzierung der Karbonisierung zu Folge. Anwendungsgebiete sind die Dermatologie und allgemeine Weichteilchirurgie.
+			Eine weitere Anwendung in der HF-Chirurgie ist das \emph{Argonassistierte Schneiden}. Hierbei wird während der Anwendung ein Schutzgas (Argon) benutzt um den Luftsauerstoff aus dem Wechselwirkungsvolumen zu verdrängen und eine Schutzatmosphäre zu bilden. Aus dem Applikatorschaft ragt dann eine aktive Schneideelektrode, die beim Schneidevorgang von Argongas koaxial umströmt wird. Dies hat eine Reduzierung der Karbonisierung und somit einen besseren Heilungsverlauf zur Folge. Außerdem verbessert sich die Sicht des Operateurs zum Wechselwirkungsvolumen aufgrund minimierter Rauchbildung. Anwendungsgebiete sind die Dermatologie und allgemeine Weichteilchirurgie.
 					
 			Die HF-Chirurgie ist für Hartgewebe wie Knochen oder Knorpel nicht geeignet, da die Leitfähigkeit aufgrund fehlendem Gewebewasser zu gering ist. Nach Gleichung \ref{eq:effektivspannung} wäre $R_{Gewebe}$ zu groß, sodass sich kein vernünftiger Strom $I$ einstellen lässt. Für eine schonende Hartgewebebearbeitung hat sich in den letzten Jahren die sogenannte \emph{Piezo-Chirurgie} entwickelt. Piezokristalle ändern bei einer angelegten Spannung ihre Länge (vergl. Ultraschall). Bei hohen Frequenzen von  $f\approx\SI{30}{\kilo\hertz}$ können so kleine Längenänderungen, gezeigt in Abbildung \ref{fig:piezoChirurgie} im Mikrometerbereich erzielt werden. Vorteile sind die effektive und präzise Bearbeitung von Hartgewebe bei gleichzeitiger Schonung des Weichgewebes, da das Weichgewebe der kleinen Oszillation mit kleiner Amplitude folgen kann und somit nicht beschädigt wird. Anwendung findet die Technik in der Mund-Gesichtschirurgie, z.B. die Präparation des Kieferknochens bei Schonung des darin befindlichen Nervus facialis (Gesichtsnerv) und der Gefäße. Durch die Preiswertigkeit, der Vielseitigkeit (durch verschiedene Applikatoren serh spezifisch anwendbar) und der Handhabung (ähnlich eines Bohrers oder Fräsers) genießt die Piezo-Chirurgie bei Ärzten hohe Akzeptanz.
 			\begin{figure}[ht] 
@@ -127,8 +150,14 @@
 	
 	\section{Ausblick}
 	 
-		Es hat sich gezeigt...
-	
+		Die Hochfrequenzchirurgie genießt hohe Akzeptanz und Beliebtheit in den Operationssälen und entwickelt sich stetig weiter. Das Paper \cite{dual} stellt beispielsweise ein in Abbildung \ref{fig:dual} ersichtliches doppelseitiges Handstück vor, welches ein automatisches Wechseln mit einer simplen Handbewegung erlaubt. Das beidseitige Handstück soll eine einfache und sichere Alternative zu traditionellen Methoden darstellen, das ein hastiges Wechseln der Applikatoren erübrigt.
+		\begin{figure}[ht] 
+			\centering
+			\includegraphics[width=0.35\columnwidth]{images/dual.png}
+			\caption{Doppelseitiges Handstück: Linke Seite mit Applikatorfassung versehen, rechte Seite mit kugelförmiger Applikation zum Koagulieren bestückt \cite{dual}.}
+			\label{fig:dual}
+		\end{figure}\\
+		Desweiteren lässt sich...
 
 
 
