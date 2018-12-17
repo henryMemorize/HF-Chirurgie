@@ -18,7 +18,7 @@
 
 \title[HF-Chirurgie]{Hochfrequenzchirurgie}
 \author{H. Merk}
-\date{\today}
+\date{18. Dezember 2018}
 
 \begin{frame}
 \maketitle
@@ -44,8 +44,8 @@
 		\textbf{Drei essentielle Bauteile:}
 		\begin{itemize}
 			\item Hochfrequenzgenerator
-			\item Erdung
 			\item Handstück mit Applikator
+			\item Erdung
 		\end{itemize}}
 	\end{minipage}
 	\begin{minipage}[t]{0.49\textwidth}
@@ -65,32 +65,13 @@
 \begin{itemize}
 	\item Gleichstrom ($f=\SI{0}{\hertz}$): \emph{elektrolytische Wirkung} \\$\rightarrow$ Ionenverschiebung/elektrochemische Prozesse
 	\vspace{0.2cm}
-	\item Wechselstrom ($f=\SI{20}{\hertz}-\SI{20}{\kilo\hertz}$): \emph{faradische Effekte}
+	\item Wechselstrom ($f=\SI{20}{\hertz}-\SI{20}{\kilo\hertz}$): \emph{faradische  Effekte}
 	\\$\rightarrow$ Störung der Nerven- \& Muskelreizung, insbesondere des Herzens
 	\vspace{0.2cm}
 	\item Wechselstrom ($f>=\SI{300}{\kilo\hertz}$): \emph{thermische Effekte}
 	\\$\rightarrow$ effektive Energieübertragung auf das Gewebe
 	\\$\rightarrow$ hohe Frequenzen = hohe Leitfähigkeit im Gewebe, das vor allem einen kapazitiven Widerstand hat (Zellen)
 \end{itemize}
-\end{frame}
-
-
-
-\begin{frame}
-\frametitle{Grundlagen}
-\framesubtitle{Thermische Prozesse im Gewebe}
-\textbf{Gewebestrukturänderung aufgrund Temperaturerhöhung:}
-	\begin{itemize}
-		\item $37^\circ-45^\circ$ $\rightarrow$ \emph{Erwärmung} des Gewebes
-		\item $45^\circ-70^\circ$ $\rightarrow$ \emph{Proteindenaturierung} (3D-Struktur der Proteine geht verloren, d.h. auch ihre Funktion)
-		\item $70^\circ-100^\circ$ $\rightarrow$ \emph{Koagulation} (Verklumpen von Proteinen)
-		\item $100^\circ-300^\circ$ $\rightarrow$ \emph{Karbonisation} (Gewebe trocknet aus)
-		\item über $300^\circ$ $\rightarrow$ \emph{Verdampfen und Abtragung} des Gewebes
-	\end{itemize}
-	\begin{figure}
-		\centering
-		\includegraphics[width=4cm]{images/spiegelei.png}
-	\end{figure}
 \end{frame}
 
 
@@ -112,6 +93,26 @@
 
 \begin{frame}
 \frametitle{Grundlagen}
+\framesubtitle{Thermische Prozesse im Gewebe}
+\textbf{Gewebestrukturänderung aufgrund Temperaturerhöhung:}
+	\begin{itemize}
+		\item $37^\circ-45^\circ$ $\rightarrow$ \emph{Erwärmung} des Gewebes
+		\item $45^\circ-70^\circ$ $\rightarrow$ \emph{Proteindenaturierung} (3D-Struktur der Proteine geht verloren, d.h. auch ihre Funktion)
+		\item $70^\circ-100^\circ$ $\rightarrow$ \emph{Koagulation} (Verklumpen von Proteinen)
+		\item $100^\circ-300^\circ$ $\rightarrow$ \emph{Karbonisation} (Gewebe trocknet aus)
+		\item über $300^\circ$ $\rightarrow$ \emph{Verdampfen und Abtragung} des Gewebes
+	\end{itemize}
+	\begin{figure}
+		\centering
+		\includegraphics[width=4cm]{images/thermGewebe.jpg}
+	\end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Grundlagen}
 \framesubtitle{Schneiden und Koagulation}
 	Zwei grundlegende Effekte in der HF-Chirurgie:
 	\vspace{0.5cm}
@@ -125,11 +126,18 @@
 	\begin{figure}
 	\includegraphics[width=4.5cm]{images/_stromModi.png}
 	\hspace{0.5cm}
-	\includegraphics[width=2.85cm]{images/fleisch.png}
+	\includegraphics[width=2.85cm]{images/krammeHF.jpg}
 	\cite{stromModi}
 	\end{figure}
 \end{frame}
 
+
+\begin{frame}
+	\begin{figure}
+		\centering
+		\includegraphics[]{images/fleisch.png}
+	\end{figure}
+\end{frame}
 
 
 \section{Anwendung}
@@ -153,7 +161,7 @@
 \frametitle{Anwendung}
 \framesubtitle{Monopolare Technik}
 	\textbf{Monopolare Technik:}
-	Strom fließt zwischen Applikatorelektrode und großflächiger Gegenelektrode. Die Stromdichte an der Applikatorelektrode ist sehr hoch
+	Strom fließt zwischen Applikatorelektrode und großflächiger Neutralelektrode. Die Stromdichte an der Applikatorelektrode ist sehr hoch
 	\\\textcolor{red}{$\Rightarrow$ thermische Effekte}
 	\begin{figure}
 		\centering
@@ -162,8 +170,8 @@
 	\end{figure}
 	\begin{itemize}
 		\item E-Feld-Linien fächern sich außerhalb des WW-Volumens auf \\$\rightarrow$ Stromdichte unkritisch
-		\item Gewissenhafte Aubfbringung der Gegenelektrode
-		\item keine Berührung durch dritte Personen
+		\item Gewissenhafte Aufbringung der Neutralelektrode
+		\item Patient darf nicht mit Metall in Berührung kommen
 	\end{itemize}
 
 \end{frame}
@@ -180,11 +188,12 @@
 		\item [$\rightarrow$]Verbesserung der Sicht des Operateurs aufgrund minimierter Rauchbildung
 	\end{itemize}
 	\vspace{0.2cm}
+	\uncover<2->{
 	\item Anwendungsgebiete: 
 	\begin{itemize}
 		\item [$\rightarrow$] Dermatologie
 		\item [$\rightarrow$] allgemeine Weichteilchirurgie
-	\end{itemize}
+	\end{itemize}}
 \end{itemize}
 \begin{figure}
 	\centering
@@ -200,16 +209,18 @@
 \framesubtitle{Piezo-Chirurgie zur Hartgewebebearbeitung}
 	\begin{itemize}
 		\item HF-Chirurgie für Hartgewebe (Knochen,Knorpel) nicht geeignet, da die Leitfähigkeit zu gering ist $\Rightarrow I=\frac{U_{effektiv}}{R_{Gewebe}}$
+		\uncover<2->{
 		\item \textbf{Piezo-Chirurgie:} Piezo-Kristalle ändern bei angelegter Spannung ihre Länge\\
 		\textcolor{red}{$\Rightarrow$ kleine Längenänderung ($\approx\mu m$) bei hohen Frequenzen ($\SI{25}{\kilo\hertz}-\SI{30}{\kilo\hertz}$)}	
-		\item gleichzeitige Schonung von Weichgewebe, da das Weichgewebe der kleinen Oszillation nicht folgen kann und somit nicht beschädigt wird
+		\item gleichzeitige Schonung von Weichgewebe, da das Weichgewebe der kleinen Oszillation nicht folgen kann und somit nicht beschädigt wird}
+		\uncover<3->{
 		\item Anwendung und Vorteile:
 		\begin{itemize}
 			\item Mund-Kiefer-Gesichtschirurgie (z.B Präparation des Kieferknochens bei Schonung des \emph{nervus facialis})
 			\item preiswert
 			\item verschiedene Applikatoren
 			\item Handhabung ähnlich zu gängigen Methoden
-		\end{itemize}
+		\end{itemize}}
 	\end{itemize}
 \end{frame}
 
